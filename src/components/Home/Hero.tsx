@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -5,7 +6,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Hero = () => {
-  const heroRef = useRef(null);
+  const heroRef = useRef<HTMLElement | null>(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
